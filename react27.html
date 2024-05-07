@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        <ol id="d1">
+            
+        </ol>
+        
+        <script type="text/babel">
+            var ar=["surendra","kumar","virat","kohli","rohit"]
+           var olul=<h1><ol>{ar.map((e)=>{return <li>{e}</li>})}</ol>  <ul>{ar.map((e)=>{return <li>{e}</li>})}</ul></h1>
+            ReactDOM.render(olul,document.getElementById("d1"))
+          
+
+        </script>
+    </body>
+</html>

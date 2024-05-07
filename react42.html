@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        <div id= "d1"></div>
+        
+        <script type="text/babel">
+           var  abc=["https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
+                "https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0%2C176%2C3008%2C1654&wid=4000&hei=2200&scl=0.752",
+                   "https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2023/06/nature-1686808887.jpg"]
+               var g= abc.map(function(a){
+                    return<li> <img src={a} width="50"/></li>
+
+                   })
+       
+             
+             ReactDOM.render(g,document.getElementById("d1"))
